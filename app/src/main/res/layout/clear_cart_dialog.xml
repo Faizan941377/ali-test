@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="300sp"
+        android:layout_height="350sp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="300sp"
+            android:layout_height="310sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/items_shape">
+
+
+            <TextView
+                android:id="@+id/tv_clearCartDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100sp"
+                android:text="Clean your cart?"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_clearCartDialog_AreYouSure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_clearCartDialog"
+                android:gravity="center_horizontal"
+                android:text="Are you sure want to clear all the items from your cart"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:id="@+id/bt_clearCartDialog_YesPlease"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_below="@+id/tv_clearCartDialog_AreYouSure"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="40sp"
+                android:background="@drawable/checkout_button_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Yes,Please"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_clearCartDialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_clearCartDialog_YesPlease"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20sp"
+                android:text="Cancel"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:background="@mipmap/ic_launcher_round"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

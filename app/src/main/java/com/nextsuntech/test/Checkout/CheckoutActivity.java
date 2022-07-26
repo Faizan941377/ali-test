@@ -1,13 +1,16 @@
 package com.nextsuntech.test.Checkout;
 
+import static com.nextsuntech.test.Model.CheckoutModelClass.CART_ITEMS;
+import static com.nextsuntech.test.Model.CheckoutModelClass.PRICE_DETAILS;
+import static com.nextsuntech.test.Model.CheckoutModelClass.SHOPPING_DETAILS;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
-import com.nextsuntech.test.Checkout.Adapter.CheckoutAdapterClass;
+import com.nextsuntech.test.Checkout.Adapter.Adapter;
 import com.nextsuntech.test.Model.CheckoutModelClass;
 import com.nextsuntech.test.R;
 
@@ -17,8 +20,8 @@ import java.util.List;
 public class CheckoutActivity extends AppCompatActivity {
 
     RecyclerView checkoutRV;
-    CheckoutAdapterClass adapter;
-    List<CheckoutModelClass> checkoutModelClassList;
+    Adapter adapter;
+    private List<CheckoutModelClass> checkoutModelClassList;
 
 
     @Override
@@ -31,15 +34,14 @@ public class CheckoutActivity extends AppCompatActivity {
         checkoutRV.setHasFixedSize(true);
         checkoutRV.setLayoutManager(new LinearLayoutManager(this));
         checkoutModelClassList = new ArrayList<>();
-        checkoutModelClassList.add(new CheckoutModelClass("Candy","300",R.drawable.ico_back));
-        checkoutModelClassList.add(new CheckoutModelClass("Candy","300",R.drawable.ico_back));
-        checkoutModelClassList.add(new CheckoutModelClass("Candy","300",R.drawable.ico_back));
-        checkoutModelClassList.add(new CheckoutModelClass("Candy","300",R.drawable.ico_back));
-        checkoutModelClassList.add(new CheckoutModelClass("Candy","300",R.drawable.ico_back));
-        checkoutModelClassList.add(new CheckoutModelClass("Candy","300",R.drawable.ico_back));
+        checkoutModelClassList.add(new CheckoutModelClass(CART_ITEMS,R.drawable.ico_back,"Candy","300"));
+        checkoutModelClassList.add(new CheckoutModelClass(CART_ITEMS,R.drawable.ico_back,"Candy","300"));
+        checkoutModelClassList.add(new CheckoutModelClass(CART_ITEMS,R.drawable.ico_back,"Candy","300"));
+
+        checkoutModelClassList.add(new CheckoutModelClass(PRICE_DETAILS,"12","34","10","100"));
 
 
-        adapter = new CheckoutAdapterClass(this,checkoutModelClassList);
+        adapter = new Adapter(this,checkoutModelClassList);
         checkoutRV.setAdapter(adapter);
     }
 }

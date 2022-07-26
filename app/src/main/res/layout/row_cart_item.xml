@@ -1,35 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:src="@drawable/items_shape"
+    android:background="@color/colorWhite">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="30sp"
-        android:layout_marginRight="20sp"
-        android:background="@drawable/items_shape">
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp">
 
             <RelativeLayout
                 android:id="@+id/rl_subtotal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8sp">
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_rowCartItem_productImage"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp" />
 
                 <TextView
                     android:id="@+id/tv_rowCartItem_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_toRightOf="@+id/iv_rowCartItem_productImage"
                     android:text="Subtotal"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_rowCartItem_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_toRightOf="@+id/iv_rowCartItem_productImage"
+                    android:layout_below="@+id/tv_rowCartItem_title"
+                    android:layout_marginTop="5sp"
+                    android:text="2x"
+                    android:textColor="@color/colorGray"
+                    android:textSize="12sp"
                     android:textStyle="normal" />
 
 
@@ -40,7 +56,7 @@
                     android:layout_toLeftOf="@+id/tv_rowCartItem_price"
                     android:text="$"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="normal" />
 
                 <TextView
@@ -51,14 +67,22 @@
                     android:layout_alignParentRight="true"
                     android:text="62.00"
                     android:textColor="@color/colorBlack"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/v_Coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="2sp"
+                    android:layout_below="@+id/iv_rowCartItem_productImage"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginEnd="16sp"
+                    android:layout_marginRight="16sp"
+                    android:background="@color/colorOffWhite" />
+
             </RelativeLayout>
-
-
-        </RelativeLayout>
-
     </LinearLayout>
 
-
-</RelativeLayout>
+</LinearLayout>

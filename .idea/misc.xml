@@ -5,11 +5,25 @@
       <map>
         <entry key="..\:/Aali.com/test/Code/app/src/main/res/drawable/checkout_button_back.xml" value="0.121" />
         <entry key="..\:/Aali.com/test/Code/app/src/main/res/drawable/checkout_button_shape.xml" value="0.121" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/drawable/item_icon_tint.xml" value="0.132" />
         <entry key="..\:/Aali.com/test/Code/app/src/main/res/drawable/items_shape.xml" value="0.121" />
-        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/activity_checkout.xml" value="0.2" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout-v21/activity_checkout.xml" value="0.203125" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/activity_checkout.xml" value="0.25" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
-        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/row_cart_item.xml" value="0.5" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/clear_cart_dailog.xml" value="0.33" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/clear_cart_dialog.xml" value="0.2" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/fragment_cart.xml" value="0.20416666666666666" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/fragment_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/fragment_search.xml" value="0.20416666666666666" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/row_cart_item.xml" value="0.25" />
         <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/row_cart_items.xml" value="0.49122807017543857" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/row_checkout_price.xml" value="0.203125" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/layout/row_checkout_shopping_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Aali.com/test/Code/app/src/main/res/menu/bottom_navigation_view.xml" value="0.203125" />
       </map>
     </option>
   </component>
